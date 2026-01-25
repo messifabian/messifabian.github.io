@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+
+<title>Pizza Order Form</title>
+<h1>
+    Pizza Order Form
+</h1>
+
+<h2> Contact Information </h2>
+
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+
+    <h2>Select Pizza Size</h2>
+    <label for="size">Pizza Size:</label>
+    <select id="size" name="size">
+        <option value="Select Size">--Select Size--</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xlarge">XLarge</option>
+    </select><br><br>
+
+    <h2>Select Sauce</h2>
+    <input type="radio" id="sauce1" name="sauce" value="Marinara">
+    <label for="sauce1">Tomato</label><br>
+    <input type="radio" id="sauce2" name="sauce" value="Ranch">
+    <label for="sauce2">Alfredo</label><br>
+    <input type="radio" id="sauce3" name="sauce" value="No sauce">
+    <label for="sauce3">Pesto</label><br><br>
+    
+    
+    <h2>Select Toppings</h2>
+    <input type="checkbox" id="topping1" name="topping1" value="pepperoni">
+    <label for="topping1">Pepperoni</label><br>
+
+    <input type="checkbox" id="topping2" name="topping2" value="mushrooms">
+    <label for="topping2">Mushrooms</label><br>
+
+    <input type="checkbox" id="topping3" name="topping3" value="onions">
+    <label for="topping3">Onions</label><br>
+
+    <input type="checkbox" id="topping4" name="topping4" value="sausage">
+    <label for="topping4">Sausage</label><br>
+
+    <input type="checkbox" id="topping5" name="topping5" value="pineapple">
+    <label for="topping5">Pineapple</label><br>
+
+    <input type="checkbox" id="topping6" name="topping6" value="peppers">
+    <label for="topping6">Peppers</label><br><br>
+
+    <h2>Additional Instructions</h2>
+    <textarea> Add Instructions </textarea><br>
+    <input type="submit" value="Submit Order">
+</form>
+<br>
+
+<p>List of My Favorite Games</p>
+<table>
+    <tr>
+        <th>Developer</th>
+        <th>Title</th>
+        <th>Year</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Bungie</td>
+        <td>Halo</td>
+        <td>2001</td>
+    </tr>
+
+    <tr>
+        <td>Halo 2</td>
+        <td>2004</td>
+    </tr>
+
+    <tr>
+        <td>Halo 3</td>
+        <td>2007</td>
+    </tr>
+
+    <tr>
+        <td>Mojang</td>
+        <td>Minecraft</td>
+        <td>2011</td>
+    </tr>
+
+    <tr><td colspan="3">Count: 4</td></tr>
+
+</table>
+
+</html>
