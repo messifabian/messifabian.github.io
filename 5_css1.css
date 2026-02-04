@@ -49,6 +49,7 @@ table, th, td {
 th {
     background-color: #d3d3d3;
     text-align: center;
+    padding: 5px;
 }
 
 #link{
@@ -57,4 +58,7 @@ th {
 
 li{
     list-style-type: decimal-leading-zero;
+}
+ol{
+    padding-left: 26px;
 }
