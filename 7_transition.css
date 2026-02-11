@@ -1,0 +1,150 @@
+/* VSCode uses copilot for inline fill and used ChatGPT for removing margins and Thanks sign*/
+#jumpMenu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background: goldenrod;
+    display: none;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+#jumpMenu a {
+    color: blue;
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    text-align: center;
+}
+
+#jumpMenu a:hover {
+    background: blue;
+    color:black;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+article {
+    width: 300px;
+    color: #aaa;
+    line-height: 1.5;
+    scroll-margin-top: 150px;
+    transition: color 2s, transform 2s;
+}
+
+article:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+article p:first-of-type::first-letter {
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 36px;
+}
+
+article p:last-of-type a::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    background: url("arrow.png") no-repeat center;
+    background-size: contain;
+}
+
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    margin-left: 14%;
+    padding-top: 120px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 14%;
+    width: calc(100% - 14%);
+    background: red;
+    text-align: center;
+    z-index: 900;
+}
+
+header p {
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#menuItems {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 14%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#menuItems button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#menuItems button:hover {
+    background-color: #daa520;
+}
+
+#recentArticles:hover {
+    background-color: #daa520;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li {
+    margin: 4px 0;
+}
+
+#thanks {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    background-color: #87cefa;
+    border: 2px solid black;
+    padding: 10px;
+    z-index: 12;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
