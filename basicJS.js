@@ -36,6 +36,7 @@ function addMultiplesToArray(){
     console.log(multiples);
 }
 
+
 function printCarObject(){
     const type = document.getElementById("carType").value;
     const mpg = document.getElementById("carMPG").value;
@@ -49,19 +50,11 @@ function printCarObject(){
     console.log(car);
 }
 
-function loadCar(num){
-    if (num === 1) {
-        car = car1;
-    } else if (num === 2) {
-        car = car2;
-    } else if (num === 3) {
-        car = car3;
-    }
-    document.getElementById("carType").value = car.type;
-    document.getElementById("carMPG").value = car.mpg;
-    document.getElementById("carColor").value = car.color;
+function loadCar(carObject) {
+    document.getElementById("carType").value = carObject.cType;
+    document.getElementById("carMPG").value = carObject.cMPG;
+    document.getElementById("carColor").value = carObject.cColor;
 }
-
 
 function changeColor(num){
     document.getElementById("styleParagraph");
