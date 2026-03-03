@@ -1,0 +1,40 @@
+<!--VScode automatically uses copilot for inline code generation and used ChatGPT for the dropdown-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokeCSS.css">
+    <title>Pokemon Finder</title>
+</head>
+<body>
+    <div class="box">
+        <div class="search">
+            <label>Name or ID</label>
+            <div class="searchRow">
+                <input type="text" id="nameInput" />
+                <button id="searchButton" type="button">Find</button>
+            </div>
+        </div>
+
+        <img id="pokeImage" src="" alt="Pokemon" style="display:none"/>
+
+        <audio id="pokeAudio" controls></audio>
+
+        <div class="dropdowns">
+            <div class="col">
+                <select id="move1"></select>
+                <select id="move2"></select>
+            </div>
+            <div class="col">
+                <select id="move3"></select>
+                <select id="move4"></select>
+            </div>
+        </div>
+
+        <button id="addButton" type="button">Add to Team</button>
+        <table id="teamTable"></table>
+    </div>
+</body>
+<script src="pokeJS.js"></script>
+</html>
